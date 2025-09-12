@@ -13,7 +13,6 @@ package lecture
  * - [(Infix functions)](https://kotlinlang.org/docs/functions.html#infix-notation)
  */
 fun main() {
-    // Exceptions
     fun checkName(name: String) {
         require(name != "")
 
