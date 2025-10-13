@@ -1,4 +1,4 @@
-package lecture
+package lecture.solution
 
 /**
  * # Hello World
@@ -23,3 +23,19 @@ package lecture
  * - [API documentation](https://kotlinlang.org/docs/api-references.html)
  * - [General documentation with good examples](https://kotlinlang.org/docs/home.html)
  **/
+fun main() {
+
+    // Print
+    print("Hello ")
+    println("World!")
+    println("What's your name?")
+
+    /*
+    * Read
+    * name
+    * */
+    val name = readln()
+
+    // String template
+    println("Hi, $name!")
+}

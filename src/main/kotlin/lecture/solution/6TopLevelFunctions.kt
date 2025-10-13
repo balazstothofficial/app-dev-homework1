@@ -1,4 +1,4 @@
-package lecture
+package lecture.solution
 
 /**
  * # Functions
@@ -23,5 +23,16 @@ package lecture
  * - [Single expression functions](https://kotlinlang.org/docs/functions.html#single-expression-functions)
  */
 fun main() {
+    val result = math(1, 2)
+    println(result)
 
+    val truth = formula(a = false)
+    println(truth)
 }
+
+// Needs an explicit return type
+fun math(x: Int, y: Int): Int {
+    return x + y - x * y / x % x
+}
+
+fun formula(a: Boolean, b: Boolean = true) = a && b || !a

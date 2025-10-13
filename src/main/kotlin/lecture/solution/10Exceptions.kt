@@ -1,4 +1,4 @@
-package lecture
+package lecture.solution
 
 /**
  * # Exceptions
@@ -41,7 +41,10 @@ fun main() {
         */
     } catch (e: IllegalStateException) {
         println("One can have more than 3 names. Exception: \"$e\"")
-    } finally {
+    }/* catch (e: IllegalArgumentException) {
+        println("Name was empty. Exception: \"$e\"")
+    }*/
+    finally {
         println("BYE!")
     }
 }

@@ -1,4 +1,4 @@
-package lecture
+package lecture.solution
 
 /**
  * # First Class Functions
@@ -29,5 +29,23 @@ package lecture
  * - [(Trailing lambdas)](https://kotlinlang.org/docs/lambdas.html#passing-trailing-lambdas)
  */
 fun main() {
+    val lower = fun(text: String) = text.lowercase()
+    val input = readln()
+    println(lower(input))
 
+    val upper: (String) -> String = { text -> text.uppercase() }
+    val length = { text: String -> text.length }
+    val drop: (String).(Int) -> String = String::drop
+    val dropFromInput: (Int) -> String = input::drop
+
+    fun local(transform: (String) -> String): String {
+        return transform(input)
+    }
+
+    println(upper(input))
+    println(length(input))
+    println(drop(input, 2))
+    println(dropFromInput(2))
+    println(local { string -> string.removePrefix("ABC") })
 }
+

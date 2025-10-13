@@ -1,4 +1,4 @@
-package lecture
+package lecture.solution
 
 /**
  * # Nullables
@@ -14,5 +14,9 @@ package lecture
  * - [Null safety](https://kotlinlang.org/docs/null-safety.html)
  **/
 fun main() {
+    val input = readln()
 
+    val number = input.toIntOrNull()?.times(2) ?: 0
+
+    println(number)
 }

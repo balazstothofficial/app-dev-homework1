@@ -1,11 +1,11 @@
 package homework
 
 /**
- * Homework 1: Tiny Text Utility
+ * # Homework 1: Tiny Text Utility
  *
  * Build a small text utility program.
  *
- * Tasks:
+ * ## Tasks:
  * 1. Ask the user which of these 5 options they want to choose:
  *    uppercase, lowercase, drop, trim, quit
  *    If the user selects "quit", end the program.
@@ -17,7 +17,7 @@ package homework
  * For the actions these functions should be used: [String.uppercase], [String.lowercase],
  *  [String.drop], and [String.trim]
  *
- * Requirements:
+ * ## Requirements:
  * - Do not crash on invalid inputs.
  * - Decompose your solution into at least 3 functions.
  * - Use at least one when-expression.
@@ -25,7 +25,7 @@ package homework
  * - Store at least once a function in a variable.
  * - Use at least one function reference.
  *
- * Bonus:
+ * ## Bonus:
  * - Print statistics after the transformation:
  *      - Length of input string.
  *      - Parity of input string.
